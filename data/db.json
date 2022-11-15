@@ -1,0 +1,163 @@
+{
+    "products": [{
+            "id": 1,
+            "title": "Miss Dior EDP",
+            "price": "148$",
+            "description": "Miss Dior Eau de Parfum (2021) was launched in 2021. The nose behind this fragrance is Francois Demachy. Top notes are iris, Peony and Lily-of-the-Valley; middle notes are Apricot, Rose and Peach; base notes are Vanilla, Musk, Tonka Bean, Sandalwood and Benzoin.",
+            "category": "women",
+            "image": "src/images/dior1.jpg"
+        },
+        {
+            "id": 2,
+            "title": "YSL Black Opium",
+            "price": 500,
+            "description": "Black Opium was launched in 2014. Black Opium was created by Nathalie Lorson, Marie Salamagne, Olivier Cresp and Honorine Blanc. Top notes are Pear, Pink Pepper and Orange Blossom; middle notes are Coffee, Jasmine, Bitter Almond and Licorice; base notes are Vanilla, Patchouli, Cedar and Cashmere Wood.",
+            "category": "women",
+            "image": "src/images/yslop2.jpeg"
+        },
+        {
+            "id": 3,
+            "title": "Viktor&Rolf Flowerbomb",
+            "price": 500,
+            "description": "Flowerbomb was launched in 2005. Flowerbomb was created by Olivier Polge, Carlos Benaim, Domitille Michalon Bertier and Dominique Ropion. Top notes are Tea, Bergamot and Osmanthus; middle notes are Orchid, Jasmine, Rose, Freesia and African Orange flower; base notes are Patchouli, Musk and Vanilla. This perfume is the winner of award FiFi Award Best National Advertising Campaign / Print 2006.",
+            "category": "women",
+            "image": "src/images/flowera.jpg"
+        },
+        {
+            "id": 4,
+            "title": "Chanel Chance EDP",
+            "price": 500,
+            "description": "Chance is a Chypre Floral fragrance for women. Chance Eau de Parfum was launched in 2005. The nose behind this fragrance is Jacques Polge. Top note is Pink Pepper; middle notes are Jasmine and iris; base notes are Patchouli, Musk and Vanilla.",
+            "category": "women",
+            "image": "src/images/chanel3.jpeg"
+        },
+        {
+            "id": 5,
+            "title": "Marc Jacobs Daisy EDP",
+            "price": 500,
+            "description": "Daisy was launched in 2007. The nose behind this fragrance is Alberto Morillas. Top notes are Violet Leaf, Blood Grapefruit and Strawberry; middle notes are Violet, Gardenia and Jasmine; base notes are Musk, White Woods and Vanilla. This perfume is the winner of 2 awards: FiFi Award Fragrance Of The Year Women`s Luxe 2008 and FiFi Awards Best Packaging Women`s Prestige 2008.",
+            "category": "women",
+            "image": "src/images/daisy2.webp"
+        },
+        {
+            "id": 6,
+            "title": " Sì EDP",
+            "price": 500,
+            "description": "Si Eau de Parfum was launched in 2015. The nose behind this fragrance is Julie Masse. Top notes are Black Currant, Pear, Mandarin Orange, Neroli and Bergamot; middle notes are Freesia, May Rose, Strawberry, Mango, Jasmine and Osmanthus; base notes are Vanilla, Musk, Patchouli, Amber and Woody Notes.",
+            "category": "women",
+            "image": "src/images/si.jpeg"
+        },
+        {
+            "id": 7,
+            "title": "Chloé EDP",
+            "price": 500,
+            "description": "Chloe Eau de Parfum was launched in 2008. Chloe Eau de Parfum was created by Amandine Clerc-Marie and Michel Almairac. Top notes are Peony, Litchi and Freesia; middle notes are Rose, Lily-of-the-Valley and Magnolia; base notes are Virginia Cedar and Amber.",
+            "category": "women",
+            "image": "src/images/chloe1.jpeg"
+        },
+        {
+            "id": 8,
+            "title": "Jo Malone Wood Sage & Sea Salt",
+            "price": 500,
+            "description": "Wood Sage & Sea Salt by Jo Malone London is a Aromatic fragrance for women and men. Wood Sage & Sea Salt was launched in 2014. The nose behind this fragrance is Christine Nagel. This means you can layer and mix more than one fragrance to create your own unique, individual scent.",
+            "category": "women",
+            "image": "src/images/jomalone.jpeg"
+        },
+        {
+            "id": 9,
+            "title": "Byredo Mojave Ghost",
+            "price": 500,
+            "description": "Mojave Ghost by Byredo is a Amber Floral fragrance for women. Mojave Ghost was launched in 2014. Top notes are Sapodilla and Ambrette (Musk Mallow); middle notes are Magnolia, Violet and Sandalwood; base notes are Ambergris and Cedar.",
+            "category": "women",
+            "image": "src/images/ghost.png"
+        },
+        {
+            "id": 10,
+            "title": "J'Adore Absolu",
+            "price": 500,
+            "description": "J'Adore Absolu was launched in 2018. The nose behind this fragrance is Francois Demachy. Top notes are Jasmine Sambac and Magnolia; middle notes are Jasmine, Indian Tuberose and May Rose; base note is Orange Blossom.",
+            "category": "women",
+            "image": "src/images/jdore.jpeg"
+        },
+        {
+            "id": 11,
+            "title": "Calvin Klein One",
+            "price": 500,
+            "description": "CK One was launched in 1994. CK One was created by Alberto Morillas and Harry Fremont. Top notes are Lemon, Green Notes, Bergamot, Pineapple, Mandarin Orange, Cardamom and Papaya; middle notes are Lily-of-the-Valley, Jasmine, Violet, Nutmeg, Rose, Orris Root and Freesia; base notes are Green Accord, Musk, Cedar, Sandalwood, Oakmoss, Green Tea and Amber.",
+            "category": "men",
+            "image": "src/images/ck4.jpeg"
+        },
+        {
+            "id": 12,
+            "title": "Gucci Bloom",
+            "price": 500,
+            "description": "Gucci Bloom by Gucci is a Floral fragrance for women. Gucci Bloom was launched in 2017. The nose behind this fragrance is Alberto Morillas. Top note is Jasmine; middle note is Tuberose; base note is Rangoon creeper.",
+            "category": "women",
+            "image": "src/images/gb3.webp"
+        },
+        {
+            "id": 13,
+            "title": "Tom Ford Ombré Leather",
+            "price": 500,
+            "description": "Ombré Leather (2018) was launched in 2018. The nose behind this fragrance is Sonia Constant. Top note is Cardamom; middle notes are Leather and Jasmine Sambac; base notes are Amber, Moss and Patchouli.",
+            "category": "men",
+            "image": "src/images/tf1.jpeg"
+        },
+        {
+            "id": 14,
+            "title": "Yves Saint Laurent Y",
+            "price": 500,
+            "description": "Yves Saint Laurent Y was launched in 2017. The nose behind this fragrance is Dominique Ropion. Top notes are Aldehydes, Bergamot, Ginger, Mint and Lemon; middle notes are Apple, Violet Leaf, Sage, Pineapple and Geranium; base notes are Ambergris, Musk, Cedar, Vetiver, Balsam Fir and Incense.",
+            "category": "men",
+            "image": "src/images/ysl.jpeg"
+        },
+        {
+            "id": 15,
+            "title": "Creed Aventus",
+            "price": 500,
+            "description": "Aventus was launched in 2010. Aventus was created by Jean-Christophe Hérault and Erwin Creed. Top notes are Pineapple, Bergamot, Black Currant and Apple; middle notes are Birch, Patchouli, Moroccan Jasmine and Rose; base notes are Musk, oak moss, Ambergris and Vanille.",
+            "category": "men",
+            "image": "src/images/creed3.jpeg"
+        },
+        {
+            "id": 16,
+            "title": "Versace Eros Men",
+            "price": 500,
+            "description": "Eros was launched in 2012. The nose behind this fragrance is Aurelien Guichard. Top notes are Mint, Green Apple and Lemon; middle notes are Tonka Bean, Ambroxan and Geranium; base notes are Madagascar Vanilla, Virginian Cedar, Atlas Cedar, Vetiver and Oakmoss.",
+            "category": "men",
+            "image": "src/images/ve.jpeg"
+        },
+        {
+            "id": 17,
+            "title": "Dolce & Gabbana Light Blue",
+            "price": 500,
+            "description": "Light Blue pour Homme was launched in 2007. Top notes are Grapefruit, Bergamot, Sicilian Mandarin and Juniper; middle notes are Pepper, Rosemary and Brazilian Rosewood; base notes are Musk, Incense and Oakmoss. This perfume is the winner of award FiFi Award Fragrance Of The Year Men`s Luxe 2008.",
+            "category": "men",
+            "image": "src/images/d&c1.jpeg"
+        },
+        {
+            "id": 18,
+            "title": "Dior Sauvage",
+            "price": 500,
+            "description": "Sauvage was launched in 2015. The nose behind this fragrance is Francois Demachy. Top notes are Calabrian bergamot and Pepper; middle notes are Sichuan Pepper, Lavender, Pink Pepper, Vetiver, Patchouli, Geranium and elemi; base notes are Ambroxan, Cedar and Labdanum.",
+            "category": "men",
+            "image": "src/images/ds.jpeg"
+        },
+        {
+            "id": 19,
+            "title": "Gucci Guilty",
+            "price": 500,
+            "description": "Gucci Guilty Pour Homme Parfum was launched in 2022. Top notes are Juniper, Lavender and Lemon; middle notes are Orange Blossom, Nutmeg and Spanish Labdanum; base notes are Patchouli, Dry Wood and Musk.",
+            "category": "men",
+            "image": "src/images/gg3.jpeg"
+        },
+        {
+            "id": 20,
+            "title": "Hugo Boss Boss Bottled",
+            "price": 500,
+            "description": ":Boss Bottled eau de toilette was launched in 1998 and, unlike other fragrances, it was fresh and fresh - that is also why it immediately became a bestseller and remains at the top of its popularity to this day. In 2017, the charismatic actor Chris Hemsworth became the face of the fragrance.",
+            "category": "men",
+            "image": "src/images/hb2.jpeg"
+        }
+    ]
+}
