@@ -11,12 +11,6 @@ import WomenPerfume from "./pages/WomenPerfume";
 function App() {
 	const [products, setProducts] = useState([]);
 	const [count, setCount] = useState(0);
-	{
-		/* <Link to="/">Home</Link> */
-	}
-	// <Routes>
-	// 	<Route path="/" element={<User props />} />
-	// </Routes>;
 	useEffect(() => {
 		fetch("http://localhost:3000/products")
 			.then((res) => res.json())
@@ -61,21 +55,6 @@ function App() {
 
 						<label className="input-group-xs  ">
 							<input type="text" placeholder="Search…" className="input" />
-							{/* <button className="btn btn-ghost">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										className="h-6 w-6"
-										fill="none"
-										viewBox="0 0 24 24"
-										stroke="currentColor">
-										<path
-											strokeLinecap="round"
-											strokeLinejoin="round"
-											strokeWidth="2"
-											d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-										/>
-									</svg>
-								</button> */}
 						</label>
 					</div>
 
@@ -168,70 +147,6 @@ function App() {
 							handleCount={handleCount}
 						/>
 					))}
-
-					{/* <div className="basis-30 card shadow-xl">
-						<figure className="max-h-64">
-							<img src="../src/images/dior1.jpg" alt="Dior" />
-						</figure>
-						<div className="card-body">
-							<h2 className="card-title">
-								Dior Blooming Bouquet
-								<div className="badge badge-secondary">Women</div>
-							</h2>
-							<p>
-								Miss Dior Eau de Parfum (2021) was launched in 2021. The nose
-								behind this fragrance is Francois Demachy. Top notes are iris,
-								Peony and Lily-of-the-Valley; middle notes are Apricot, Rose and
-								Peach; base notes are Vanilla, Musk, Tonka Bean, Sandalwood and
-								Benzoin.
-							</p>
-							<div className="card-actions">
-								<button className="btn btn-primary">Shop Now</button>
-							</div>
-						</div>
-					</div>
-					<div className="basis-30 card  shadow-xl">
-						<figure className="max-h-64">
-							<img src="../src/images/yslop3.jpeg" alt="YSL" />
-						</figure>
-						<div className="card-body">
-							<h2 className="card-title">
-								YSL
-								<div className="badge badge-secondary">Women</div>
-							</h2>
-							<p>
-								Miss Dior Eau de Parfum (2021) was launched in 2021. The nose
-								behind this fragrance is Francois Demachy. Top notes are iris,
-								Peony and Lily-of-the-Valley; middle notes are Apricot, Rose and
-								Peach; base notes are Vanilla, Musk, Tonka Bean, Sandalwood and
-								Benzoin.
-							</p>
-							<div className="card-actions">
-								<button className="btn btn-primary">Shop Now</button>
-							</div>
-						</div>
-					</div>
-					<div className="basis-30 card shadow-xl">
-						<figure className="max-h-64">
-							<img src="../src/images/jomalone.jpeg" alt="Dior" />
-						</figure>
-						<div className="card-body">
-							<h2 className="card-title">
-								Jomalone
-								<div className="badge badge-secondary">Women</div>
-							</h2>
-							<p>
-								Miss Dior Eau de Parfum (2021) was launched in 2021. The nose
-								behind this fragrance is Francois Demachy. Top notes are iris,
-								Peony and Lily-of-the-Valley; middle notes are Apricot, Rose and
-								Peach; base notes are Vanilla, Musk, Tonka Bean, Sandalwood and
-								Benzoin.
-							</p>
-							<div className="card-actions">
-								<button className="btn btn-primary">Shop Now</button>
-							</div>
-						</div>
-					</div> */}
 				</div>
 			</section>
 			<section className="mt-10">
