@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import { PerfumeContext } from "../App";
+import PerfumeDetail from "../pages/PerfumeDetail";
 
-const ProductCard = ({ product, handleCount }) => {
+const ProductCard = ({ product }) => {
+	const { handleCount, handleCart } = useContext(PerfumeContext);
 	return (
 		<div className="basis-30 card shadow-xl">
 			<figure className="max-h-64">
@@ -13,9 +17,21 @@ const ProductCard = ({ product, handleCount }) => {
 				</h2>
 				<p>{product.description}</p>
 				<div className="card-actions">
-					<button className="btn btn-primary" onClick={handleCount}>
+					<button
+						className="btn btn-primary"
+						onClick={() => {
+							handleCount();
+							handleCart(product);
+						}}>
 						Add to Cart
 					</button>
+					<Link to="/perfume-detail">
+						<button
+							className="btn btn-primary"
+							onClick={<PerfumeDetail product={product} key={product.id} />}>
+							View Details
+						</button>
+					</Link>
 				</div>
 			</div>
 		</div>
@@ -23,3 +39,6 @@ const ProductCard = ({ product, handleCount }) => {
 };
 
 export default ProductCard;
+{
+	/* <PerfumeDetail product={product} key={product.id} /> */
+}
