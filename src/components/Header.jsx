@@ -1,10 +1,11 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { PerfumeContext } from "../App";
 import NewArrival from "../pages/NewArrival";
 import BestSeller from "../pages/BestSeller";
 import WomenPerfume from "../pages/WomenPerfume";
 import MenPerfume from "../pages/MenPerfume";
-import { PerfumeContext } from "../App";
 
 const Header = () => {
 	const { count, products } = useContext(PerfumeContext);
@@ -94,9 +95,12 @@ const Header = () => {
 
 							<div className="card-actions">
 								<Link to="/my-cart">
-									<button className="btn btn-primary btn-block">
+									<motion.button
+										initial={{ scale: 1 }}
+										whileHover={{ scale: 1.2 }}
+										className="btn btn-xs btn-secondary btn-block">
 										View cart
-									</button>
+									</motion.button>
 								</Link>
 							</div>
 						</div>

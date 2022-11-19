@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import Header from "./Header";
 
 const HeroSedtion = () => {
@@ -15,8 +17,14 @@ const HeroSedtion = () => {
 					appearances, emotions.{" "}
 				</p>
 				<p>Shop over 100 instock perfumes in one place.</p>
-
-				<button className="btn btn-active btn-secondary mt-3">Grab Now</button>
+				<Link to="/all">
+					<motion.button
+						initial={{ scale: 1 }}
+						whileHover={{ scale: 1.3 }}
+						className="btn btn-active btn-secondary mt-3">
+						Grab Now
+					</motion.button>
+				</Link>
 			</div>
 		</StyledSection>
 	);

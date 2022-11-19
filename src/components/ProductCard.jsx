@@ -1,12 +1,17 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import { PerfumeContext } from "../App";
 import PerfumeDetail from "../pages/PerfumeDetail";
 
 const ProductCard = ({ product }) => {
 	const { handleCount, handleCart } = useContext(PerfumeContext);
 	return (
-		<div className="basis-1/3 flex card shadow-xl">
+		<motion.div
+			initial={{ opicity: 0.5, scale: 0.8 }}
+			whileHover={{ opicity: 1, scale: 1 }}
+			transition={{ duration: 1 }}
+			className="basis-1/3 flex card gap-5 shadow-xl overflow-hidden">
 			<figure className="max-h-64">
 				<img src={product.image} />
 			</figure>
@@ -19,20 +24,22 @@ const ProductCard = ({ product }) => {
 					{product.description}
 				</p>
 				<div className="card-actions flex mx-auto">
-					<button
+					<motion.button
+						initial={{ scale: 1 }}
+						whileHover={{ scale: 1.2 }}
 						className="btn btn-active btn-secondary"
 						onClick={() => {
 							handleCount();
 							handleCart(product);
 						}}>
 						Add to Cart
-					</button>
+					</motion.button>
 					{/* <Link to={"/perfume-detail"}>
 						<button className="btn btn-primary">View Details</button>
 					</Link> */}
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import ProductCard from "../components/ProductCard";
 
@@ -6,14 +7,16 @@ const BestSeller = ({ products, handleCount }) => {
 	return (
 		<div>
 			<Header />
-			{products.slice(5, 16).map((product) => (
-				<ProductCard
-					id={product.id}
-					product={product}
-					handleCount={handleCount}
-				/>
-			))}
-			console.log("counter", count);
+			<section className="container flex flex-wrap justify-center mt-10 gap-5">
+				{products.slice(5, 16).map((product) => (
+					<ProductCard
+						id={product.id}
+						product={product}
+						handleCount={handleCount}
+					/>
+				))}
+			</section>
+			<Footer />
 		</div>
 	);
 };

@@ -1,14 +1,13 @@
 import { useState, useEffect, createContext } from "react";
 import styled from "styled-components";
 import { Routes, Route, Link } from "react-router-dom";
-import Header from "./components/Header";
-import ProductCard from "./components/ProductCard";
 import NewArrival from "./pages/NewArrival";
 import BestSeller from "./pages/BestSeller";
 import MenPerfume from "./pages/MenPerfume";
 import WomenPerfume from "./pages/WomenPerfume";
 import Rememberance from "./pages/Rememberance";
 import PerfumeDetail from "./pages/PerfumeDetail";
+import AllPerfume from "./pages/AllPerfume";
 import MyCart from "./pages/MyCart";
 
 export const PerfumeContext = createContext();
@@ -81,6 +80,12 @@ function App() {
 						}
 					/>
 					<Route
+						path="/all"
+						element={
+							<AllPerfume products={products} handleCount={handleCount} />
+						}
+					/>
+					<Route
 						path="/new-arrival"
 						element={<NewArrival products={products} />}
 					/>
@@ -98,42 +103,10 @@ function App() {
 						element={<MyCart products={products} handleCart={handleCart} />}
 					/>
 				</Routes>
-
-				{/* <Cart products={products} /> */}
 			</StyledContainer>
 		</PerfumeContext.Provider>
 	);
 }
-// function Cart({ products }) {
-// 	return (
-// 		<>
-// 			<div>
-// 				<div className="container flex">
-// 					<h2>My Cart</h2>
-// 					<button>Remove all</button>
-// 				</div>
-// 				<div className="card card-side bg-base-100 shadow-xl">
-// 					<figure>
-// 						<img src={products.image} alt="perfume" />
-// 					</figure>
-// 					<div className="card-body">
-// 						<h2 className="card-title">title</h2>
-// 						<p>description</p>
-// 						<div className="card-actions container flex">
-// 							<button className="btn btn-primary">Increase</button>
-// 							<button className="btn btn-primary">Decrease</button>
-// 							<p> Quantity * price</p>
-// 						</div>
-// 					</div>
-// 				</div>
-// 			</div>
-// 			<div className="container flex">
-// 				<h2>Total price</h2>
-// 				<h2>price</h2>
-// 			</div>
-// 		</>
-// 	);
-// }
 
 export default App;
 const StyledContainer = styled.div`
@@ -142,14 +115,3 @@ const StyledContainer = styled.div`
 	margin-right: auto;
 	margin-left: auto;
 `;
-
-// const StyledFigure = styled.figure`
-// 	position: absolute;
-// 	top: 50%;
-// 	left: 50%;
-// 	transform: translate(-50%, -50%);
-// 	z-index: 10;
-// `;
-// f4decb
-//#D4BAA1 photo color
-//f2eee2

@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import { PerfumeContext } from "../App";
 import { BsFillInboxFill } from "react-icons/bs";
 const MyCart = ({ product }) => {
-	const { selectedProduct, handleCount, handleCart, handleRemove } =
+	const { selectedProduct, handleCart, handleRemove } =
 		useContext(PerfumeContext);
 	const overall = selectedProduct.reduce(
 		(accumulator, currentValue) =>

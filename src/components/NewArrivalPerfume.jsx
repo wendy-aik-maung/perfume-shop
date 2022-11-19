@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import NewArrival from "../pages/NewArrival";
 const NewArrivalPerfume = () => {
 	return (
@@ -15,9 +16,12 @@ const NewArrivalPerfume = () => {
 					The new collection of Fragrances
 				</h2>
 				<Link to="/new-arrival">
-					<button className="btn btn-secondary mt-3 ml-28 mb-5">
+					<motion.button
+						initial={{ scale: 1 }}
+						whileHover={{ scale: 1.3 }}
+						className="btn btn-secondary mt-3 ml-28 mb-5">
 						Shop Now
-					</button>
+					</motion.button>
 				</Link>
 			</div>
 		</section>
