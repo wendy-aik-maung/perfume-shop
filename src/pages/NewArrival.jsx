@@ -7,9 +7,11 @@ const NewArrival = ({ products }) => {
 	return (
 		<div>
 			<Header />
-			{products.slice(0, 6).map((product) => (
-				<ProductCard key={product.id} product={product} />
-			))}
+			<section className="container flex flex-wrap justify-center mt-10 gap-5">
+				{products.slice(0, 6).map((product) => (
+					<ProductCard key={product.id} product={product} />
+				))}
+			</section>
 			<Footer />
 		</div>
 	);

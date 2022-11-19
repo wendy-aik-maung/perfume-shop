@@ -6,7 +6,7 @@ const BestSellerPerfume = ({ products, handleCount }) => {
 			<div className="text-center text-3xl font-bold pt-3 pb-5">
 				Best Seller Fragrances
 			</div>
-			<div className="flex gap-5">
+			<div className="flex gap-5 ml-4 mr-4">
 				{products.slice(0, 3).map((product) => (
 					<ProductCard
 						key={product.id}

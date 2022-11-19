@@ -16,7 +16,7 @@ const HeroSedtion = () => {
 				</p>
 				<p>Shop over 100 instock perfumes in one place.</p>
 
-				<button className="btn btn-primary mt-3">Grab Now</button>
+				<button className="btn btn-active btn-secondary mt-3">Grab Now</button>
 			</div>
 		</StyledSection>
 	);
@@ -31,7 +31,7 @@ const StyledSection = styled.section`
 	background-radius: 20px;
 	background-shadow: rgba(0, 0, 0, 0.8) 0 0 20px;
 	position: relative;
-	height: 600px;
+	height: 700px;
 	// width: 500px;
 	background-color: #d0e0c3;
 `;

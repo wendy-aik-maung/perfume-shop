@@ -5,15 +5,17 @@ const NewArrivalPerfume = () => {
 	return (
 		<section className="container flex gap-10 mt-10 mb-10 relative">
 			<div className="basis-70 ml-28 h-auto">
-				<img src="../src/images/p10.jpg" />
+				<img src="../src/images/bg2.jpg" />
 			</div>
-			<div className="basis-30 mr-28 w-auto mt-8">
-				<img src="../src/images/p2.jpg" />
+			<div className="basis-30 mr-28 w-auto">
+				<img src="../src/images/bg11.jpg" />
 			</div>
-			<div className="absolute translate-x-80 translate-y-40">
-				<h2 className="text-2xl font-bold">The new collection of Fragrances</h2>
+			<div className="absolute translate-x-80 translate-y-36 bg-slate-600 bg-opacity-50">
+				<h2 className="text-2xl font-bold pt-5 pl-5 pr-5">
+					The new collection of Fragrances
+				</h2>
 				<Link to="/new-arrival">
-					<button className="btn btn-primary translate-x-40 mt-3">
+					<button className="btn btn-secondary mt-3 ml-28 mb-5">
 						Shop Now
 					</button>
 				</Link>

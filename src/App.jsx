@@ -42,12 +42,32 @@ function App() {
 			setSelectedProduct([...selectedProduct, { ...product, quantity: 1 }]);
 		}
 	};
+
+	const handleRemove = (product) => {
+		const remainingProduct = selectedProduct.find(
+			(selectedItem) => selectedItem.id === product.id
+		);
+		if (remainingProduct.quantity === 1) {
+			setSelectedProduct(
+				selectedProduct.filter((selectedItem) => selectedItem.id !== product.id)
+			);
+		} else {
+			setSelectedProduct(
+				selectedProduct.map((selectedItem) =>
+					selectedItem.id === product.id
+						? { ...remainingProduct, quantity: remainingProduct.quantity - 1 }
+						: selectedItem
+				)
+			);
+		}
+	};
 	console.log(products);
 	const perfumeContextValue = {
 		products,
 		selectedProduct,
 		handleCount,
 		handleCart,
+		handleRemove,
 		count,
 	};
 	return (
@@ -72,7 +92,7 @@ function App() {
 					/>
 					<Route path="/women" element={<WomenPerfume products={products} />} />
 					<Route path="/men" element={<MenPerfume products={products} />} />
-					<Route path="/perfume-detail" element={<PerfumeDetail />} />
+					<Route path="/perfume-detail/id=:id" element={<PerfumeDetail />} />
 					<Route
 						path="/my-cart"
 						element={<MyCart products={products} handleCart={handleCart} />}
@@ -117,9 +137,8 @@ function App() {
 
 export default App;
 const StyledContainer = styled.div`
-	background-color: #f2eee2;
+	background-color: #f8eee7;
 	max-width: 1024px;
-	min-height: 2000px;
 	margin-right: auto;
 	margin-left: auto;
 `;
@@ -133,3 +152,4 @@ const StyledContainer = styled.div`
 // `;
 // f4decb
 //#D4BAA1 photo color
+//f2eee2
